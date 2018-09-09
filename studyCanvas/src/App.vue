@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <three-container></three-container>
+    <div class="nav">
+      <router-link to="/">Three</router-link>
+      <router-link to="/fish-game">FishGame</router-link>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import ThreeContainer from '@/views/three-container'
 export default {
-  name: 'App',
-  components: {
-    ThreeContainer
-  }
+  name: 'App'
 }
 </script>
 

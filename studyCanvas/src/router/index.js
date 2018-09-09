@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
+import Three from '@/views/three/three'
+import FishGame from '@/views/fish-game/fish-game'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Three',
+      component: Three
+    },
+    {
+      path: '/fish-game',
+      name: 'FishGame',
+      component: FishGame
     }
   ]
 })
