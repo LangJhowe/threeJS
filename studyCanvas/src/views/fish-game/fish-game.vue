@@ -10,3 +10,9 @@ export default {
   // mixins: [ResizeHandler]
 }
 </script>
+
+<style lang="stylus" scoped>
+.fish-game-container{
+  padding-top 20px
+}
+</style>

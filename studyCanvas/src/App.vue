@@ -3,10 +3,10 @@
     <div class="nav">
       <router-link to="/">Three</router-link>
       <router-link to="/fish-game">FishGame</router-link>
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
     </div>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -16,7 +16,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
 #app {
+  // height 100%
+  // width 100%
+  .nav{
+    position fixed
+    a{
+      color rgb(34,105,254)
+    }
+  }
 }
 </style>
