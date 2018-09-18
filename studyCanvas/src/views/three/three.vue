@@ -26,36 +26,10 @@ export default {
     this.renderer.setSize(window.innerWidth, window.innerHeight) // 设置画布大小
     this.renderer.setPixelRatio(window.devicePixelRatio) // 设置像素比，针对高清屏
     this.renderer.setClearColor('rgb(135,206,250)', 1.0)
-    // this.renderer.setClearColor('rgba(135,206,250,0.5)', 1.0)
-
-    // this.renderer.setClearColor(0xffffff, 1.0) // 设置默认背景色
-    // this.renderer.setClearColor(0x000000, 1.0)
     this.renderer.domElement.classList.add('canvas')
     let container = document.querySelector('.three-container')
     console.log(this.renderer.clearColor())
     container.appendChild(this.renderer.domElement)
-
-    // ======================================
-    // this.scene = new THREE.Scene()
-    // this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-
-    // this.renderer = new THREE.WebGLRenderer()
-    // this.renderer.setSize(window.innerWidth, window.innerHeight)
-
-    // // this.renderer.setClearColor(0xffffff, 1.0)
-    // // this.renderer.setClearColor('#428bca', 1.0)
-    // // this.renderer.setClearColor('rgba(135,206,250,0.5)', 1.0)
-
-    // document.body.appendChild(this.renderer.domElement)
-
-    // this.geometry = new THREE.BoxGeometry(1, 1, 1)
-    // this.material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
-    // this.cube = new THREE.Mesh(this.geometry, this.material)
-    // this.scene.add(this.cube)
-
-    // this.camera.position.z = 5
-    // console.log(this.cube.rotation.x)
-    // console.log(this.cube.rotation.y)
 
     this.animate()
   },
