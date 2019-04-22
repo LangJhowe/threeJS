@@ -22,6 +22,7 @@ export default {
   // width 100%
   .nav{
     position fixed
+    right 0
     a{
       color rgb(34,105,254)
     }
