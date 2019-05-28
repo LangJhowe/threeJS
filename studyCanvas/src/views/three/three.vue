@@ -208,7 +208,7 @@ export default {
       this.camera.lookAt({x: 0, y: 0, z: 0})
       // 添加轨道控制器
       // 新建一个轨道控制器
-      this.orbitControls = new THREE.OrbitControls(this.camera, this.renderer.domElement)
+      this.orbitControls = new OrbitControls(this.camera, this.renderer.domElement)
       this.orbitControls.target = new THREE.Vector3(0, 0, 0)// 控制焦点
       this.orbitControls.autoRotate = false// 将自动旋转关闭
       this.clock = new THREE.Clock()// 用于更新轨道控制器

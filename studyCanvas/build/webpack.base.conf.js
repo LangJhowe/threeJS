@@ -35,7 +35,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {
@@ -76,12 +76,12 @@ module.exports = {
         }
       },
       {
-        test: require.resolve("three/examples/js/controls/OrbitControls"),
-        use: "imports-loader?THREE=three"
+        test: require.resolve('three/examples/js/controls/OrbitControls'),
+        use: 'imports-loader?THREE=three'
       },
       {
-        test: require.resolve("three/examples/js/controls/OrbitControls"),
-        use: "exports-loader?THREE.OrbitControls"
+        test: require.resolve('three/examples/js/controls/OrbitControls'),
+        use: 'exports-loader?THREE.OrbitControls'
       }
     ]
   },
